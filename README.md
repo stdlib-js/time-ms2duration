@@ -251,8 +251,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/time-ms2duration.svg
 [npm-url]: https://npmjs.org/package/@stdlib/time-ms2duration
 
-[test-image]: https://github.com/stdlib-js/time-ms2duration/actions/workflows/test.yml/badge.svg?branch=v0.0.1
-[test-url]: https://github.com/stdlib-js/time-ms2duration/actions/workflows/test.yml?query=branch:v0.0.1
+[test-image]: https://github.com/stdlib-js/time-ms2duration/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/time-ms2duration/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/time-ms2duration/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/time-ms2duration?branch=main
