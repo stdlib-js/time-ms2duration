@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/time-ms2duration",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Convert a number of milliseconds to a string duration.",
   "license": "Apache-2.0",
   "author": {
