@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ms2duration from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@deno/mod.js';
+import ms2duration from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@v0.0.1-deno/mod.js';
 ```
 
 #### ms2duration( str )
@@ -75,7 +75,7 @@ duration = ms2duration( 3600000 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ms2duration from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@deno/mod.js';
+import ms2duration from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@v0.0.1-deno/mod.js';
 
 var duration = ms2duration( 1030 );
 // returns '1s30ms'
