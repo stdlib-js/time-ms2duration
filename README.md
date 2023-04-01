@@ -24,19 +24,101 @@ limitations under the License.
 
 > Convert a number of milliseconds to a string duration.
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/time-ms2duration
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+</section>
 
+<section class="usage">
 
+## Usage
 
+```javascript
+var ms2duration = require( '@stdlib/time-ms2duration' );
+```
+
+#### ms2duration( str )
+
+Converts a number of milliseconds to a string duration.
+
+```javascript
+var duration = ms2duration( 1030 );
+// returns '1s30ms'
+
+duration = ms2duration( 3600000 );
+// returns '1h'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   A duration string is a string containing a sequence of time units. A time unit is a non-negative integer followed by a unit identifier. The following unit identifiers are supported:
+
+    -   `d`: days
+    -   `h`: hours
+    -   `m`: minutes
+    -   `s`: seconds
+    -   `ms`: milliseconds
+
+    For example, the string `1m3s10ms` is a duration string containing three time units: `1m` (1 minute), `3s` (3 seconds), and `10ms` (10 milliseconds). The string `60m` is a duration string containing a single time unit: `60m` (60 minutes).
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var ms2duration = require( '@stdlib/time-ms2duration' );
+
+var duration = ms2duration( 1030 );
+// returns '1s30ms'
+
+duration = ms2duration( 3600000 );
+// returns '1h'
+
+duration = ms2duration( 0 );
+// returns '0ms'
+
+duration = ms2duration( 86400000 );
+// returns '1d'
+
+duration = ms2duration( 86400000+3600000+60000+1000+100 );
+// returns '1d1h1m1s100ms'
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -54,7 +136,7 @@ npm install -g @stdlib/time-ms2duration-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: ms2duration [options] [<string>]
@@ -74,7 +156,7 @@ Options:
 
 <section class="notes">
 
-## Notes
+### Notes
 
 -   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
 
@@ -94,7 +176,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ ms2duration 1000
@@ -129,11 +211,6 @@ $ echo -n '1350,2000' | ms2duration --split ','
 
 <section class="related">
 
-## See Also
-
--   <span class="package-name">[`@stdlib/time-ms2duration`][@stdlib/time-ms2duration]</span><span class="delimiter">: </span><span class="description">convert a number of milliseconds to a string duration.</span>
-
-
 <!-- /.related -->
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
@@ -149,7 +226,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -172,8 +249,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/time-ms2duration-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/time-ms2duration-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/time-ms2duration.svg
+[npm-url]: https://npmjs.org/package/@stdlib/time-ms2duration
 
 [test-image]: https://github.com/stdlib-js/time-ms2duration/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/time-ms2duration/actions/workflows/test.yml?query=branch:main
@@ -189,7 +266,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
