@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+ms2duration = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/time-ms2duration/tags). For example,
+
+```javascript
 ms2duration = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@v0.1.0-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var ms2duration = require( 'path/to/vendor/umd/time-ms2duration/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -113,7 +118,7 @@ duration = ms2duration( 3600000 );
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
