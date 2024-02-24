@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ms2duration from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@esm/index.mjs';
+import ms2duration from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@v0.2.1-esm/index.mjs';
 ```
 
 #### ms2duration( str )
@@ -91,7 +91,7 @@ duration = ms2duration( 3600000 );
 <body>
 <script type="module">
 
-import ms2duration from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@esm/index.mjs';
+import ms2duration from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-ms2duration@v0.2.1-esm/index.mjs';
 
 var duration = ms2duration( 1030 );
 // returns '1s30ms'
